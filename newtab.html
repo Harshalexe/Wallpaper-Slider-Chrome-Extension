@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ThunderFox Wallpaper</title>
+</head>
+<body>
+  <div id="wallpaper-container"></div>
+  
+  <!-- Google Search Bar -->
+  <div id="search-container">
+    <form id="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+      <input
+        type="text"
+        name="q"
+        id="search-bar"
+        placeholder="Search Google or type a URL"
+        autocomplete="off"
+      />
+      <!-- <button type="submit" id="search-button"></button> -->
+    </form>
+  </div>
+  
+  <!-- Controls for slideshow -->
+  <div class="controls">
+    <label for="interval">Slide Interval:</label>
+    <select id="interval">
+      <option value="5000">2s</option>
+      <option value="5000">5s</option>
+      <option value="10000">10s</option>
+      <option value="15000">15s</option>
+    </select>
+    <br><br>
+    <label for="file-upload">Upload Wallpapers:</label>
+    <input type="file" id="file-upload" multiple accept="image/*">
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
